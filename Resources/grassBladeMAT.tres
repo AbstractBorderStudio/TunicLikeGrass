@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://cudumyswmvqa6"]
+
+[ext_resource type="Shader" path="res://Shaders/blade.gdshader" id="1_bd6mg"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_xjbol"]
+offset = Vector3(1000, 0, 0)
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ygt60"]
+noise = SubResource("FastNoiseLite_xjbol")
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_bd6mg")
+shader_parameter/_col = Color(0, 0.54902, 0.105882, 1)
+shader_parameter/_dir = Vector3(0, 0, 0)
+shader_parameter/_strength = 1.0
+shader_parameter/_wind_dir = Vector3(0, 0, 0)
+shader_parameter/_wind_stg = 1.0
+shader_parameter/_wind_noise = SubResource("NoiseTexture2D_ygt60")

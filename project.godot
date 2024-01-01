@@ -1,0 +1,12 @@
+config_version=5
+
+[application]
+
+config/name="TunicGrass"
+config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://icon.svg"
+config/tags=PackedStringArray("learn", "shader")
+
+[dotnet]
+
+project/assembly_name="TunicGrass"
